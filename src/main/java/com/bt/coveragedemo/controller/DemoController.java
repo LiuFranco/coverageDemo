@@ -29,7 +29,10 @@ public class DemoController {
         if (userBean.getAge() == 0) {
             return new HashMap<>();
         }
-        System.out.println("DemoController.demo1");
+        if (userBean.getAge() == 10) {
+           System.out.println("DemoController.demo1");
+        }
+        
         return demoService.demo1(userBean);
 
     }
